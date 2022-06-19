@@ -3,6 +3,7 @@ import './App.css';
 import MiComponente from './MiComponente';
 import SegundoComponente from "./SegundoComponente";
 import TercerComponente from './TercerComponente';
+import EventosComponente from './EventosComponente';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <EventosComponente />
 
         <TercerComponente 
           nombre = "Victor"

@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-function TercerComponente({nombre, apellidos, ficha}) {
+function TercerComponente({
+  nombre="Alejandro", apellidos="Vaquero Toba", ficha
+}) {
 
   return (
     <>
@@ -26,6 +28,17 @@ TercerComponente.propTypes = {
   nombre: PropTypes.string,
   apellidos: PropTypes.string,
   ficha: PropTypes.object,
+}
+
+TercerComponente.defaultProps = {
+  nombre: "Alejandro",
+  apellidos: "Vaquero Toba",
+  ficha: {
+    altura: "1.91",
+    grupo: "A",
+    estado: "Bueno",
+    alergias: "Fruta y Frutos Secos"
+  }
 }
 
 export default TercerComponente;
